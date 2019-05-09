@@ -2,7 +2,7 @@ package utilidades
 
 import "net"
 
-//GetMyLocalIP devulve de la ip local de la maquina
+//GetMyLocalIP devuelve de la ip local de la maquina
 func GetMyLocalIP() string {
 	con, err := net.Dial("udp", "8.8.8.8:80")
 	if err != nil {
